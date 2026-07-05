@@ -4,19 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Akwa Coffee</title>
+    <style type="text/css">
+        .parent {
+          display: grid;
+          place-items: center; /* Centers both horizontally and vertically */
+          height: 50vh;       /* Gives the container full viewport height */
+        }
+
+        .child {
+          width: 50%;         /* Or a fixed width like 300px */
+          margin: 0 auto;     /* 0 for top/bottom, auto for left/right */
+        }
+    </style>
 </head>
-<body style="margin: 50px;">
-
-    <h1>Coming&nbsp;Soon:</h1>
-    <h1>&emsp;Akwa&nbsp;Coffee</h1>
-    <br>
-    <h2>2 Organic Blends</h2>
-    <ul>
-        <li>Amaretto</li>
-        <li>Afro Black</li>
-    </ul>
-    
-    <!-- This is a comment. It won't show up in the browser. -->
-
+<body>
+    <div class="parent">
+        <h1>Coming&nbsp;Soon:&emsp;Akwa&nbsp;Coffee</h1>
+        <div>
+            <h2>2 Organic Blends</h2>
+            <ul>
+                <li>Amaretto</li>
+                <li>Afro Black</li>
+            </ul>
+        </div>
+    </div>
 </body>
 </html>
